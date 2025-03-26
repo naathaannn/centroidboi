@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Centroid finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-panel">
+        <h1>Centroid</h1>  
+        <div class="shape-inputs">
+            <div class="shape-input">
+                <label for="area">Area:</label>
+                <input type="number" id="area" class="area-input" placeholder="Enter area">
+                
+                <label for="x-coord">Centroid X:</label>
+                <input type="number" id="x-coord" class="x-input" placeholder="Enter X coordinate">
+                
+                <label for="y-coord">Centroid Y:</label>
+                <input type="number" id="y-coord" class="y-input" placeholder="Enter Y coordinate">
+                
+                <div class="button-group">
+                    <button id="add-shape">Add Shape</button>
+                    <button id="subtract-shape">Subtract Shape</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="shapes-list">
+            <h2>Added Shapes</h2>
+            <div id="shapes-container">
+                <p id="no-shapes">No shapes added yet</p>
+            </div>
+        </div>
+        
+        <div class="results">
+            <h2>Complex Centroid</h2>
+            <div class="result-values">
+                <p>Total Area: <span id="total-area">0</span></p>
+                <p>X̄: <span id="centroid-x">0</span></p>
+                <p>Ȳ: <span id="centroid-y">0</span></p>
+            </div>
+        </div>
+        <audio controls autoplay>
+            <source src="images/youtube_3i2FOyu5rDI_audio.mp3" type="audio/mpeg">
+          </audio>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
